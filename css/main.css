@@ -1168,6 +1168,45 @@ html.t-pattern-8 {
 /**/
 /* page header top */
 /**/
+
+.site-title {
+  background: url("../pic/1920-1280-img-1.jpg");
+  background-size: cover;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  opacity: 70% white;
+}
+
+.site-title .site-background {
+  padding-top: 10rem;
+  text-align: center;
+  color: #fff;
+}
+
+.site-title h1,
+h3 {
+  margin: 0.3rem;
+}
+.site-title span {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.site-title .btn {
+  margin: 1.2rem;
+  border: 1px solid #272b31;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #0a2747;
+  font-weight: 600;
+}
+
+.site-title .btn:hover {
+  background: #272b31;
+  border: 1px solid #272b31;
+  color: var(--sky);
+}
 header {
   position: relative;
   z-index: 1000;
@@ -1178,7 +1217,7 @@ header {
   background-repeat: no-repeat;
 }
 header.only-color {
-  background-image: none;
+  background-image: url(..pic/1920-1280-img-2.jpg);
 }
 .shop header {
   background-image: url(../pic/1920-1280-img-3.jpg);
