@@ -1174,7 +1174,7 @@ html.t-pattern-8 {
   background-size: cover;
   height: 70vh;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   opacity: 70% white;
 }
 
@@ -1552,7 +1552,7 @@ header:before {
 }
 .main-nav > ul > li > a {
   display: block;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 .main-nav > ul > li > a:after {
   content: "|";
