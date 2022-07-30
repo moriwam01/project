@@ -3933,12 +3933,11 @@ form.subscribe input[type="submit"]:hover {
 .widget-search hr + form {
   margin-top: 20px;
 }
-.widget-search form input[type="search"] {
+.widget-search form input[type="file"] {
   border: 1px solid #e1e1e1;
   line-height: 34px;
-  height: 36px;
-  padding: 0 10px;
-  padding-right: 50px;
+  height: 50px;
+  padding: 40px 10px;
   width: 100%;
   margin-bottom: 10px;
 }
@@ -9415,13 +9414,13 @@ hr {
 /* popup section start */
 
 .popup {
-  background-color: #ffffff;
-  width: 450px;
+  background-color: azure;
+  width: 550px;
   padding: 30px 40px;
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
-  top: 50%;
+  top: 60%;
   border-radius: 8px;
   font-family: "Poppins", sans-serif;
   display: none;
@@ -9432,10 +9431,16 @@ hr {
   margin: 0 0 20px auto;
   background-color: transparent;
   font-size: 30px;
-  color: #c5c5c5;
+  color: #b018bb;
   border: none;
   outline: none;
   cursor: pointer;
+}
+.close {
+  color: #000000;
+  border: none;
+  background: none;
+  font-size: 16px;
 }
 .coupon-container {
   position: relative;
@@ -9500,7 +9505,7 @@ hr {
 
 .coupon-container a {
   text-decoration: none;
-  background: #e63946;
+  background: #b018bb;
   padding: 16px;
   display: inline-block;
   width: 100%;
@@ -9515,6 +9520,6 @@ hr {
 }
 
 .coupon-container .btn:hover {
-  background: #e22535;
+  background: #b018bb;
 }
 /* popup section end */

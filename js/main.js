@@ -5,7 +5,18 @@ if (jQuery("html").attr("dir") == "rtl") {
 } else {
   directRTL = "";
 }
+// popup code start
 
+window.addEventListener("load", function () {
+  setTimeout(function open(event) {
+    document.querySelector(".popup").style.display = "block";
+  }, 100);
+});
+
+document.querySelector("#close").addEventListener("click", function () {
+  document.querySelector(".popup").style.display = "none";
+});
+// popup end
 function is_mobile_device() {
   if (
     $(window).width() < 767 ||
@@ -1665,31 +1676,27 @@ function mobile_nav_switcher_init() {
       var nav = get_current_nav_level();
       var cls = "opened";
       if (nav_container.hasClass(cls)) {
-        nav
-          .stop()
-          .animate(
-            {
-              "margin-top":
-                window.mobile_nav.animation_params.vertical_start + "px",
-              opacity: 0,
-            },
-            window.mobile_nav.animation_params.speed,
-            function () {
-              nav_container.removeClass(cls);
-            }
-          );
+        nav.stop().animate(
+          {
+            "margin-top":
+              window.mobile_nav.animation_params.vertical_start + "px",
+            opacity: 0,
+          },
+          window.mobile_nav.animation_params.speed,
+          function () {
+            nav_container.removeClass(cls);
+          }
+        );
       } else {
         nav_container.addClass(cls);
-        nav
-          .stop()
-          .animate(
-            {
-              "margin-top":
-                window.mobile_nav.animation_params.vertical_end + "px",
-              opacity: 1,
-            },
-            window.mobile_nav.animation_params.speed
-          );
+        nav.stop().animate(
+          {
+            "margin-top":
+              window.mobile_nav.animation_params.vertical_end + "px",
+            opacity: 1,
+          },
+          window.mobile_nav.animation_params.speed
+        );
       }
     }
   );
@@ -2033,15 +2040,3 @@ function cws_top_social_init() {
     }
   });
 }
-// popup code start
-
-window.addEventListener("load", function () {
-  setTimeout(function open(event) {
-    document.querySelector(".popup").style.display = "block";
-  }, 100);
-});
-
-document.querySelector("#close").addEventListener("click", function () {
-  document.querySelector(".popup").style.display = "none";
-});
-// popup end
