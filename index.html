@@ -16,6 +16,9 @@
     <link rel="stylesheet" type="text/css" href="tuner/css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" />
     <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link
       rel="stylesheet"
       type="text/css"
@@ -27,7 +30,7 @@
   </head>
   <body>
     <!-- page header -->
-    <header class="only-color">
+    <header">
       <!-- header top panel -->
       <div class="page-header-top">
         <div class="grid-row clear-fix">
@@ -135,132 +138,66 @@
         </div>
       </div>
       <!-- sticky menu -->
-      <section class="site-title">
-        <div class="site-background">
-          <h1>Enhance your learning</h1>
-          <button class="btn">Get Started Now</button>
-        </div>
-      </section>
     </header>
     <!-- / page header -->
     <!-- revolution slider -->
 
-    <!-- <div class="tp-banner-container">
-      <div class="tp-banner-slider">
-        <ul>
-          <li data-masterspeed="700">
-            <img
-              src="rs-plugin/assets/loader.gif"
-              data-lazyload="pic/slider-1.jpg"
-              data-bgposition="left 20%"
-              alt
-            />
-            <div
-              class="tp-caption sl-content align-left"
-              data-x="['left','center','center','center']"
-              data-hoffset="20"
-              data-y="center"
-              data-voffset="0"
-              data-width="['720px','600px','500px','300px']"
-              data-transform_in="opacity:0;s:1000;e:Power2.easeInOut;"
-              data-transform_out="opacity:0;s:300;s:1000;"
-              data-start="400"
-            >
-              <div class="sl-title">Get Everything Right</div>
-              <p>
-                Aenean viverra lobortis purus, sed eleifend nisl egestas in<br />Proin
-                lacus augue, ornare quis nunc vel
-              </p>
-              <a href="#" class="cws-button border-radius"
-                >Join us <i class="fa fa-angle-double-right"></i
-              ></a>
-            </div>
-          </li>
-          <li data-masterspeed="700">
-            <img
-              src="rs-plugin/assets/loader.gif"
-              data-lazyload="pic/slider-2.jpg"
-              alt
-            />
-            <div
-              class="tp-caption sl-content align-right"
-              data-x="['right','center','center','center']"
-              data-hoffset="20"
-              data-y="center"
-              data-voffset="0"
-              data-width="['720px','600px','500px','300px']"
-              data-transform_in="opacity:0;s:1000;e:Power2.easeInOut;"
-              data-transform_out="opacity:0;s:300;s:1000;"
-              data-start="400"
-            >
-              <div class="sl-title">Forward. Thinking.</div>
-              <p>
-                Aenean viverra lobortis purus, sed eleifend nisl egestas in<br />Proin
-                lacus augue, ornare quis nunc vel
-              </p>
-              <a href="#" class="cws-button border-radius"
-                >Join us <i class="fa fa-angle-double-right"></i
-              ></a>
-            </div>
-          </li>
-          <li data-masterspeed="700" data-transition="fade">
-            <img
-              src="rs-plugin/assets/loader.gif"
-              data-lazyload="pic/slider-3.jpg"
-              alt
-            />
-            <div
-              class="tp-caption sl-content align-center"
-              data-x="center"
-              data-hoffset="0"
-              data-y="center"
-              data-voffset="0"
-              data-width="['720px','600px','500px','300px']"
-              data-transform_in="opacity:0;s:1000;e:Power2.easeInOut;"
-              data-transform_out="opacity:0;s:300;s:1000;"
-              data-start="400"
-            >
-              <div class="sl-title">Knowledge for life</div>
-              <p>
-                Aenean viverra lobortis purus, sed eleifend nisl egestas in<br />Proin
-                lacus augue, ornare quis nunc vel
-              </p>
-              <a href="#" class="cws-button border-radius"
-                >Join us <i class="fa fa-angle-double-right"></i
-              ></a>
-            </div>
-          </li>
-          <li data-masterspeed="700" data-transition="fade">
-            <img
-              src="rs-plugin/assets/loader.gif"
-              data-bgposition="center right"
-              data-lazyload="pic/slider-4.jpg"
-              alt
-            />
-            <div
-              class="tp-caption sl-content align-left"
-              data-x="['left','center','center','center']"
-              data-hoffset="20"
-              data-y="center"
-              data-voffset="40"
-              data-width="['720px','600px','500px','300px']"
-              data-transform_in="opacity:0;s:1000;e:Power2.easeInOut;"
-              data-transform_out="opacity:0;s:300;s:1000;"
-              data-start="400"
-            >
-              <div class="sl-title">Your revolution starts</div>
-              <p>
-                Aenean viverra lobortis purus, sed eleifend nisl egestas in<br />Proin
-                lacus augue, ornare quis nunc vel
-              </p>
-              <a href="#" class="cws-button border-radius"
-                >Join us <i class="fa fa-angle-double-right"></i
-              ></a>
-            </div>
-          </li>
-        </ul>
+    
+
+
+
+
+
+
+
+
+<div class="container">  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="./1170x580-img-6.jpg" alt="Los Angeles" style="width:100%;"><div class="carousel-caption d-none d-md-block">
+          <h5>Lorem ipsum dolor sit.</h5>
+          <button class="btn get-start">Get Started</button>
+        </div>
       </div>
-    </div> -->
+
+      <div class="item">
+        <img src="./1170x580-img-7.jpg" alt="Chicago" style="width:100%;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Lorem, ipsum dolor.</h5>
+          <button class="btn get-start">Get Started</button>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="./1920-1280-img-3.jpg" alt="New york" style="width:100%;">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Lorem ipsum dolor sit amet consectetur.</h5>
+          <button class="btn get-start">Get Started</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only"></span>
+    </a>
+  </div>
+</div>
+
     <!-- / revolution slider -->
     <hr class="divider-color" />
     <!-- content -->
@@ -467,7 +404,7 @@
       </section>
       <!-- / section -->
       <hr class="divider-color">
-      <!-- section -->
+      <!-- section guarentee-->
       <section class="padding-section">
         <div class="grid-row clear-fix">
           <h2 class="center-text">Our Guarantee</h2>
@@ -590,6 +527,86 @@
         </div>
       </section>
       <!-- / section -->
+            
+            <hr class="divider-color" />
+            <!-- steps section -->
+            <section class="fullwidth-background padding-section">
+              <div class="grid-row">
+                <h2 class="center-text">How We Work</h2>
+                <!-- time line -->
+                <div class="time-line">
+                  <div class="line-element">
+                    <div class="action">
+                      <div class="action-block">
+                        <span><i class="flaticon-magnifier"></i></span>
+                        <div class="text">
+                          <h3>Upload your photo</h3>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipisc ing elit.
+                            Aenean commodo ligula.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="level">
+                      <div class="level-block">Step 1</div>
+                    </div>
+                  </div>
+                  <div class="line-element color-2">
+                    <div class="level">
+                      <div class="level-block">Step 2</div>
+                    </div>
+                    <div class="action">
+                      <div class="action-block">
+                        <span><i class="flaticon-computer"></i></span>
+                        <div class="text">
+                          <h3>Painting started</h3>
+                          <p>
+                            Aenean massa. Cum sociis nato que penatibus et magnis dis
+                            par turient montes.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="line-element color-3">
+                    <div class="action">
+                      <div class="action-block">
+                        <span><i class="flaticon-shopping"></i></span>
+                        <div class="text">
+                          <h3>Preview your painting</h3>
+                          <p>
+                            Donec quam felis, ultricies nec, pellent esque eu, pretium
+                            quis, sem. Nulla conse massa.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="level">
+                      <div class="level-block">Step 3</div>
+                    </div>
+                  </div>
+                  <div class="line-element color-2">
+                    <div class="level">
+                      <div class="level-block">Step 4</div>
+                    </div>
+                    <div class="action">
+                      <div class="action-block">
+                        <span><i class="flaticon-computer"></i></span>
+                        <div class="text">
+                          <h3>Purchase you painting</h3>
+                          <p>
+                            Aenean massa. Cum sociis nato que penatibus et magnis dis
+                            par turient montes.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- / time line -->
+              </div>
+            </section>
 
       <hr class="divider-color" />
       <!-- paralax section -->
@@ -890,3 +907,9 @@
     <script src="js/retina.min.js"></script>
   </body>
 </html>
+
+
+
+
+
+

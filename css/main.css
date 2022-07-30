@@ -1241,7 +1241,6 @@ header:before {
   background: none;
 }
 .page-header-top address {
-  float: left;
   display: inline-block;
   font-size: 0.92em;
   color: #ffffff;
@@ -2353,6 +2352,30 @@ nav a.active,
   footer h2 {
     padding: 17px 10px 13px 10px;
   }
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+}
+.carousel-caption {
+  align-items: center;
+}
+.carousel-caption h5 {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(38, 34, 34);
+  margin-bottom: 10px;
+}
+
+.carousel-caption .get-start {
+  background-color: #318cce;
+  color: #ffffff;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 /**/
@@ -5938,7 +5961,6 @@ select.filter.full-width {
 }
 img.avatar {
   display: inline-block;
-  float: left;
   margin-right: 10px;
   width: 76px;
   border: 1px solid #cfcfcf;
@@ -6054,7 +6076,7 @@ ol.commentlist {
   top: 0;
   left: 0;
   z-index: 4;
-  backfacce-visibility: hidden;
+  backface-visibility: hidden;
 }
 .ribbon .banner {
   -webkit-transform: rotate(-45deg);
@@ -6663,6 +6685,28 @@ p.form-row.form-row-wide.select-arrow:before {
   margin-left: -10px;
   margin-bottom: -5px;
 }
+.action .steps span {
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+  line-height: 1;
+  left: 0;
+  bottom: 0;
+}
+.action .divider {
+  position: relative;
+  z-index: 2;
+  background-color: #318cce;
+  padding: 40px;
+  text-align: left;
+}
+.action .steps i {
+  font-size: 68px;
+  color: #318cce;
+  opacity: 0.25;
+  margin-left: -10px;
+  margin-bottom: -5px;
+}
 .action .action-block .text {
   position: relative;
   z-index: 2;
@@ -6710,7 +6754,7 @@ p.form-row.form-row-wide.select-arrow:before {
   display: inline-block;
   font-size: 30px;
   line-height: 80px;
-  padding: 0 35px;
+  padding: 0 70px;
   color: #ffffff;
   background-color: #318cce;
   border-radius: 9px;
@@ -9368,3 +9412,109 @@ hr {
 .login-block .button-fullwidth + .button-fullwidth {
   margin-top: 10px;
 }
+/* popup section start */
+
+.popup {
+  background-color: #ffffff;
+  width: 450px;
+  padding: 30px 40px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  display: none;
+  text-align: center;
+}
+.popup button {
+  display: block;
+  margin: 0 0 20px auto;
+  background-color: transparent;
+  font-size: 30px;
+  color: #c5c5c5;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.coupon-container {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  max-width: 350px;
+  text-align: center;
+  background: #a3f9ff;
+  margin: 100px auto 30px auto;
+  pointer-events: none;
+  transform: translateY(30px);
+  transition: all 400ms ease;
+}
+
+.coupon-container .gift {
+  position: absolute;
+  width: 180px;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.coupon-container .bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.coupon-container h2,
+.coupon-container p,
+.coupon-container .discount,
+.coupon-container .code,
+.coupon-container .btn {
+  position: relative;
+}
+
+.coupon-container h2 {
+  color: #023047;
+  font-weight: 900;
+  font-size: 30px;
+  padding-top: 70px;
+  margin-bottom: 0;
+}
+
+.coupon-container p {
+  font-size: 18px;
+  color: #023047;
+  margin: 8px;
+}
+
+.coupon-container .discount {
+  font-family: "Poppins", sans-serif;
+  font-size: 56px;
+  font-weight: 300;
+  color: #076170;
+}
+
+.coupon-container .code {
+  font-size: 45px;
+  font-weight: 900;
+}
+
+.coupon-container a {
+  text-decoration: none;
+  background: #e63946;
+  padding: 16px;
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  color: #fff;
+  box-sizing: border-box;
+  margin-top: 24px;
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: all 300ms ease;
+}
+
+.coupon-container .btn:hover {
+  background: #e22535;
+}
+/* popup section end */
